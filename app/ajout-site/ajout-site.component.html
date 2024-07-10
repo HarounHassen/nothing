@@ -1,0 +1,13 @@
+<body>
+     <div class="container">
+          <div class="input-container  border rounded-4 p-4 bg-white  ">
+               <h5>Veuillez définir le nom de votre Site:</h5><br>
+               <p  [ngClass]="{'error' : siteNameEmpty }" > {{siteNameLabel}} </p>
+               <input type="text" placeholder="Organisation" class="form-control form-control-lg bg-light fs-6" [(ngModel)]="siteName">
+               <div class="btn-container">
+                    <button class="btn btn-primary fs-6" (click)="isEmpty()" >Ajouter</button>
+               </div>
+               
+          </div>
+     </div>
+</body>

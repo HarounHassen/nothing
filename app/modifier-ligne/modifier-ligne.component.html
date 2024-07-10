@@ -1,0 +1,20 @@
+
+<body>
+     <div class="container">
+          <div class="input-container  border rounded-4 p-4 bg-white  ">
+               <h5>Modifier Ligne</h5><br>
+               <p [ngClass]="{'error1' : siteNameEmpty}" >{{siteNamelabel}}</p>
+               <input type="text" placeholder="Nom de site" class="form-control form-control-lg bg-light fs-6" [(ngModel)]="siteName">
+               <p [ngClass]="{'error2' : plantNameEmpty}"> {{plantNamelabel}} </p>
+               <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Nom de plant" [(ngModel)]="plantName">
+               <p>Nom du segment de la ligne </p>
+               <input type="text" class="form-control form-control-lg bg-light fs-6">
+               <p>Nom Ligne</p>
+               <input type="text" class="form-control form-control-lg bg-light fs-6">
+               <div class="btn-container">
+                    <button class="btn btn-primary fs-6" (click)="isEmpty()" >Modifier</button>
+               </div>
+               
+          </div>
+     </div>
+</body>

@@ -1,0 +1,31 @@
+<body>
+     <div class="container">
+          <div class="input-container  border rounded-4 p-4 bg-white  ">
+               <div class="information-container border rounded-4 p-4 bg-light" >
+                    
+                    <h6 style="font-weight: 600;"><img src="../assets/images/information.png" width="28px" alt="information" style="margin-right: 15px;">INFORMATION :</h6>
+                    <p>Vous pouvez ajouter un segment manuellement. Si vous souhaitez ajouter plusieurs Segments à la fois, vous avez la possibilité de le
+                         faire automatiquement en important un fichier Excel.</p>
+               </div>
+               <p [ngClass]="{'error' : siteNameEmpty}"> {{siteNameLabel}} </p>
+               <select class="form-select" aria-label="Default select example" [(ngModel)]="SiteName" >
+                    <option selected>selecter un site</option>
+                    <option value="0">Sousse</option>
+                    <option value="1">Mateur Sud</option>
+                    <option value="2">Manzel Hayet</option>
+                    <option value="3">Mateur Nord</option>
+                  </select>
+               <p [ngClass]="{'error1' : plantNameEmpty}"> {{plantNameLabel}} </p>
+               <input type="text" placeholder="Nom de Plant" class="form-control form-control-lg fs-6" [(ngModel)]="plantName">
+               <p [ngClass]="{'error2' : segmentNameEmpty}" > {{segmentNameLabel}} </p>
+               <input type="text" placeholder="Nom de Plant" class="form-control form-control-lg fs-6" [(ngModel)]="segmentName">
+               <div class="btn-container">
+                    <button class="btn btn-primary fs-6" (click)="isEmpty()" >Ajouter</button>
+               </div>
+               <div class="file-container">
+                    <label for="formFile" class="form-label">Ajout Massif de plusieurs plants(fichier Excel):</label>
+                    <input class="form-control" type="file" id="formFile" accept=".xls,.xlsx">
+               </div>
+          </div>
+     </div>
+</body> 

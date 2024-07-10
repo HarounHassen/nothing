@@ -1,0 +1,134 @@
+<body>
+     <div class="container">
+          <div class="table-container border rounded-4  p-3">
+               <div class="buttons-container">
+                    <input type="search" placeholder="cherchez" class="form-control form-control-lg bg-light fs-6">
+                    <button class="btn   btn-outline-primary w-50 fs-6">Cherchez</button>
+                    <button class="btn  btn-dark w-50 fs-6" (click)="Ajouter()">Ajouter Utilisateur</button>
+               </div>
+               <div class="select-container ">
+                    <select class="form-select" name="" id="">
+                         <option value="0">Role</option>
+                    </select>
+                    <select class="form-select" name="" id="">
+                         <option value="0">Site</option>
+                    </select>
+                    <select class="form-select" name="" id="">
+                         <option value="0">Plant</option>
+                    </select>
+                    <select class="form-select" name="" id="">
+                         <option value="0">Segment</option>
+                    </select>
+                    <select class="form-select" name="" id="">
+                         <option value="0">Ligne</option>
+                    </select>
+
+               </div>
+ 
+               <div class="table-wrapper" style="max-height: 500px; overflow-y: auto; width: 100%;" >
+                    <table class="table" >
+                         <thead>
+                              <tr>
+                                   <th scope="col"  class="titre th-td">Matricule</th>
+                                   <th scope="col"  class="titre">Utilisateur</th>
+                                   <th scope="col" class="titre">Roles</th>
+                                   <th scope="col"  class="titre th-td">Site</th>
+                                   <th scope="col"  class="titre th-td">Plant</th>
+                                   <th scope="col"  class="titre">Segment</th>
+                                   <th scope="col"  class="titre">Ligne</th>
+                                   <th scope="col"  class="titre mail">Mail</th>
+                                   <th scope="col"  class="titre">Actions</th>
+                              </tr>     
+                         </thead>
+                         <tbody>
+                              <tr>
+                                   <td scope="row" >Shift 1</td>
+                                   <td>Contre maitre 1</td>
+                                   <td>Cutting & WPA MEB AUTARK</td>
+                                   <td>BMW</td>
+                                   <td>Sousse</td>
+                                   <td>Segment 63-2</td>
+                                   <td>G-202-6-MH</td>
+                                   <td>Foulenbenfoulensociete.com</td>
+                                   <td>
+                                        <a type="button"><img src="../assets/images/edit.png" alt="" width="28px" (click)="Modifier()" style="margin-right:7px;"></a>
+                                        <a type="button"><img src="../assets/images/delete.png" alt="" width="30px"></a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td scope="row" >Shift 2</td>
+                                   <td>Contre maitre 2</td>
+                                   <td>Segment 45</td>
+                                   <td>AUDI</td>
+                                   <td>Sousse</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>
+                                        <a type="button"><img src="../assets/images/edit.png" alt="" width="28px" (click)="Modifier()" style="margin-right:7px;"></a>
+                                        <a type="button"><img src="../assets/images/delete.png" alt="" width="30px"></a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td scope="row" >Shift 3</td>
+                                   <td>Contre maitre 3</td>
+                                   <td>Segment Muster SYSAPP</td>
+                                   <td>VW</td>
+                                   <td>Sousse</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>
+                                        <a type="button"><img src="../assets/images/edit.png" alt="" width="28px" (click)="Modifier()" style="margin-right:7px;"></a>
+                                        <a type="button"><img src="../assets/images/delete.png" alt="" width="30px"></a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td scope="row" >Shift 4</td>
+                                   <td>Contre maitre 4</td>
+                                   <td>Segment 59</td>
+                                   <td>MS1</td>
+                                   <td>Mateur Sud</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>
+                                        <a type="button"><img src="../assets/images/edit.png" alt="" width="28px" (click)="Modifier()" style="margin-right:7px;"></a>
+                                        <a type="button"><img src="../assets/images/delete.png" alt="" width="30px"></a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td scope="row" >Shift 5</td>
+                                   <td>Contre maitre 5</td>
+                                   <td>Segment 53-1</td>
+                                   <td>MN1</td>
+                                   <td>Mateur Nord</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>
+                                        <a type="button"><img src="../assets/images/edit.png" alt="" width="28px" (click)="Modifier()" style="margin-right:7px;"></a>
+                                        <a type="button"><img src="../assets/images/delete.png" alt="" width="30px"></a>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td scope="row" >Shift 6</td>
+                                   <td>Contre maitre 6</td>
+                                   <td>Cutting & WPA SYSAPP LTN1</td>
+                                   <td>MH1</td>
+                                   <td>Manzel Hayet</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>Segment 63-2</td>
+                                   <td>
+                                        <a type="button"><img src="../assets/images/edit.png" alt="" width="28px" (click)="Modifier()" style="margin-right:7px;"></a>
+                                        <a type="button"><img src="../assets/images/delete.png" alt="" width="30px"></a>
+                                   </td>
+                              </tr>
+                              
+                         </tbody>
+                    </table></div>
+          </div>
+     </div>
+</body>
+
